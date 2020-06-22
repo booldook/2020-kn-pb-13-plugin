@@ -1,5 +1,8 @@
+.main-wrap {width: 100%; max-height: 100vh; overflow: hidden;}
+.main-wrap .slider {height: 100%; max-height: 100vh; overflow: hidden;}
 .main-wrap .slider .slide {position: relative;}
-.main-wrap .slide .slogan {color: #fff; font-size: 8vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.main-wrap .slide .slogan {color: #fff; font-size: 8vw; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); transition: all 0.5s; opacity: 0;}
+.main-wrap .slide .slogan.active {opacity: 1; top: 50%;}
 .main-wrap .pagers {display: flex; justify-content: center; width: 100%; position: absolute; bottom: 10px;}
 .main-wrap .pagers > li {color: #eee;}
 .main-wrap .pagers > li.slick-active {color: #f30;}

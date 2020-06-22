@@ -8,6 +8,8 @@ $(".slider").slick({
 	dotsClass: "pagers",
 	prevArrow: $('.bt-prev'),
 	nextArrow: $('.bt-next'),
+	fade: true,
+	// vertical: true,
 	/*
   responsive: [{
       breakpoint: 1280,
@@ -29,8 +31,11 @@ $(".slider").slick({
 	*/
 });
 
+$(".slider").on("beforeChange", function(event, slick, currentSlide, nextSlide){
+	slick.$slides.find(".slogan").removeClass("active");
+});
 $(".slider").on("afterChange", function(e, slick, slide){
-	console.log(slide);
+	slick.$slides.find(".slogan").addClass("active");
 });
 
 $(".pagers button").html('●');
