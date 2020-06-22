@@ -1,0 +1,14 @@
+.pagers {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+}
+.pagers > li {color: #eee;}
+.pagers > li.slick-active {color: #f30;}
+.pagers > li > button {border: none; outline: none; background-color: transparent; font-size: 2rem; cursor: pointer; color: inherit;}
+.main-wrap {position: relative;}
+.main-wrap .bt {position: absolute; z-index: 10000; color: #fff; font-size: 5rem; top: 50%; transform: translateY(-50%); cursor: pointer;}
+.main-wrap .bt-prev {left: 20px;}
+.main-wrap .bt-next {right: 20px;}
