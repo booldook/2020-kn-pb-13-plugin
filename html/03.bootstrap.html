@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
 	<script src="../js/jquery-3.5.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 </head>
+
 <body style="height: 10000px;">
 	<!-- 
 		1. color: primary/info/danger/warning/success/dark/light/secondary
@@ -29,7 +31,8 @@
 		13. rounded
 		14. font-weight-bold  
 	-->
-	<header class="bg-dark text-light d-flex justify-content-between align-items-center w-100 position-fixed" style="z-index: 1000;">
+	<header class="bg-dark text-light d-flex justify-content-between align-items-center w-100 position-fixed"
+		style="z-index: 1000;">
 		<div class="logo p-3 font-weight-bold">LOGO</div>
 		<div class="navi-wrap d-flex">
 			<a href="#" class="nav p-3 text-light">HOME</a>
@@ -112,7 +115,8 @@
 				<i class="fa fa-times"></i>
 			</button>
 			<h4 class="alert-heading">Well done!</h4>
-			<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+			<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so
+				that you can see how spacing within an alert works with this kind of content.</p>
 			<hr>
 			<p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
 		</div>
@@ -122,11 +126,157 @@
 			<div class="alert alert-primary">
 				<h3>Badge</h3>
 			</div>
-			
+			<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+			<h5>Example heading <span class="badge badge-primary">New</span></h5>
+			<h6>Example heading <span class="badge badge-danger">New</span></h6>
+			<button type="button" class="btn btn-primary">
+				Notifications <span class="badge badge-light">4</span>
+			</button>
+			<span class="badge badge-primary">Primary</span>
+			<span class="badge badge-secondary">Secondary</span>
+			<span class="badge badge-success">Success</span>
+			<span class="badge badge-danger">Danger</span>
+			<span class="badge badge-warning">Warning</span>
+			<span class="badge badge-info">Info</span>
+			<span class="badge badge-light">Light</span>
+			<span class="badge badge-dark">Dark</span>
+			<span class="badge badge-pill badge-primary">Primary</span>
+			<span class="badge badge-pill badge-secondary">Secondary</span>
+			<span class="badge badge-pill badge-success">Success</span>
+			<span class="badge badge-pill badge-danger">Danger</span>
+			<span class="badge badge-pill badge-warning">Warning</span>
+			<span class="badge badge-pill badge-info">Info</span>
+			<span class="badge badge-pill badge-light">Light</span>
+			<span class="badge badge-pill badge-dark">Dark</span>
+			<a href="#" class="badge badge-primary">Primary</a>
+			<a href="#" class="badge badge-secondary">Secondary</a>
+			<a href="#" class="badge badge-success">Success</a>
+			<a href="#" class="badge badge-danger">Danger</a>
+			<a href="#" class="badge badge-warning">Warning</a>
+			<a href="#" class="badge badge-info">Info</a>
+			<a href="#" class="badge badge-light">Light</a>
+			<a href="#" class="badge badge-dark">Dark</a>
 		</div>
-	</div>
+
+		<!-- BreadCrumb -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-primary">
+				<h3>BreadCrumb</h3>
+			</div>
+			<nav>
+				<ul class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item"><a href="#">Library</a></li>
+					<li class="breadcrumb-item active">Data</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Button -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-primary">
+				<h3>Button</h3>
+			</div>
+			<div class="btn-group">
+				<button class="btn btn-dark">First</button>
+				<button class="btn btn-dark">Second</button>
+				<button class="btn btn-dark">Third</button>
+			</div>
+			<div class="btn-group-vertical">
+				<button class="btn btn-dark">First</button>
+				<button class="btn btn-dark">Second</button>
+				<button class="btn btn-dark">Third</button>
+			</div>
+		</div>
+
+		<!-- Card -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-primary">
+				<h3>Card</h3>
+			</div>
+			<ul class="card-wrap d-flex justify-content-between">
+				<div class="card" style="flex: 32% 0 0;">
+					<img src="//via.placeholder.com/300" class="card-img-top img">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card" style="flex: 32% 0 0;">
+					<img src="//via.placeholder.com/300" class="card-img-top img">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card" style="flex: 32% 0 0;">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+					<img src="//via.placeholder.com/300" class="card-img-bottom img">
+				</div>
+			</ul>
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="card-link">Card link</a>
+					<a href="#" class="card-link">Another link</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="//via.placeholder.com/150" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">Cras justo odio</li>
+					<li class="list-group-item">Dapibus ac facilisis in</li>
+					<li class="list-group-item">Vestibulum at eros</li>
+				</ul>
+				<div class="card-body">
+					<a href="#" class="card-link">Card link</a>
+					<a href="#" class="card-link">Another link</a>
+				</div>
+			</div>
+			<ul class="d-flex justify-content-between">
+				<div class="card">
+					<div class="card-header">
+						Featured
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<div class="card text-center">
+					<div class="card-header">
+						Featured
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Special title treatment</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+					<div class="card-footer text-muted">
+						2 days ago
+					</div>
+				</div>
+			</ul>
+		</div>
+
+
+	</div><!-- container -->
 	<script src="../js/03.bootstrap.js"></script>
 </body>
+
 </html>
 
 <!-- Badge -->
