@@ -496,7 +496,7 @@
 			</div>
 			<div class="my-3">
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
 						Dropdown button
 					</button>
 					<div class="dropdown-menu">
@@ -505,9 +505,96 @@
 						<a class="dropdown-item" href="#">Something else here</a>
 					</div>
 				</div>
+				<!-- <div class="dropdown my-3 tel1 dropright"> -->
+				<div class="dropdown my-3 tel1">
+					<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">010</button>
+					<ul class="dropdown-menu">
+						<li class="dropdown-item">010</li>
+						<li class="dropdown-divider"></li>
+						<li class="dropdown-item">011</li>
+						<li class="dropdown-item">016</li>
+						<li class="dropdown-item">017</li>
+						<li class="dropdown-item">018</li>
+						<li class="dropdown-item">019</li>
+					</ul>
+				</div>
 			</div>
 		</div><!-- Dropdown -->
 
+		<!-- Form -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-secondary p-5">
+				<h3>회원가입</h3>
+				<hr>
+				<p>기존회원이신 분은 아래의 링크에 따라 로그인 해 주세요.</p>
+				<a class="btn btn-primary" href="#">로그인</a>
+			</div>
+			<form class="rounded border p-5">
+				<div class="row border-bottom">
+					<div class="bg-light d-none d-md-block col-md-3 p-3 font-weight-bold">
+						아이디 <span class="text-danger">*</span>
+					</div>
+					<div class="col-md-9 p-2">
+						<input class="form-control" type="text" name="userid" placeholder="아이디 *">
+					</div>
+				</div>
+				<div class="row border-bottom">
+					<div class="bg-light d-none d-md-block col-md-3 p-3 font-weight-bold">
+						패스워드 <span class="text-danger">*</span>
+					</div>
+					<div class="col-md-9 p-2">
+						<input class="form-control" type="password" name="userpw" placeholder="패스워드 *">
+					</div>
+				</div>
+				<div class="row border-bottom">
+					<div class="bg-light d-none d-md-block col-md-3 p-3 font-weight-bold">
+						패스워드 확인 <span class="text-danger">*</span>
+					</div>
+					<div class="col-md-9 p-2">
+						<input class="form-control" type="password" name="userpw2" placeholder="패스워드 확인 *">
+					</div>
+				</div>
+				<div class="row border-bottom">
+					<div class="bg-light d-none d-md-block col-md-3 p-3 font-weight-bold">이메일</div>
+					<div class="col-md-9 p-2">
+						<input class="form-control" type="text" name="email" placeholder="이메일">
+					</div>
+				</div>
+				<div class="row border-bottom">
+					<div class="bg-light d-none d-md-block col-md-3 p-3 font-weight-bold">이름</div>
+					<div class="col-md-9 p-2">
+						<input class="form-control" type="text" name="username" placeholder="이름">
+					</div>
+				</div>
+				<div class="text-center py-5">
+					<button class="btn btn-primary">가입</button>
+					<button class="btn btn-danger" type="reset">다시작성</button>
+				</div>
+			</form>
+		</div><!-- Form -->
+
+		<!-- Form -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-primary">
+				<h3>Form</h3>
+			</div>
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1">
+					<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1">
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Check me out</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div><!-- Form -->
 
 	</div><!-- container -->
 	<script src="../js/03.bootstrap.js"></script>
