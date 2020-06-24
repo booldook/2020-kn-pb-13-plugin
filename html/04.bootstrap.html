@@ -142,14 +142,13 @@
 				모달창 띄우기
 			</button>
 			<!-- Modal -->
-			<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-				aria-hidden="true">
+			<div class="modal fade" id="modal1" tabindex="-1">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
+							<h5 class="modal-title">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal">
+								<span>&times;</span>
 							</button>
 						</div>
 						<div class="modal-body">
@@ -163,6 +162,17 @@
 				</div>
 			</div>
 		</div><!-- Modal -->
+		
+		<!-- TabIndex -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-primary">
+				<h3>TabIndex</h3>
+			</div>
+			<input type="text" class="form-control" tabindex="1">
+			<input type="text" class="form-control" tabindex="3">
+			<input type="text" class="form-control" tabindex="2">
+			<input type="text" class="form-control" tabindex="4">
+		</div><!-- TabIndex -->
 
 	</div><!-- container -->
 	<script src="../js/04.bootstrap.js"></script>
