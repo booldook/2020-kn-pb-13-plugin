@@ -14,7 +14,7 @@
 </head>
 
 <body style="height: 10000px;">
-	<div class="container" style="padding-top: 80px;">
+	<div class="container">
 		<div class="jumbotron">
 			<h2>
 				Bootstrap을 배워보자
@@ -141,9 +141,12 @@
 			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
 				모달창 띄우기
 			</button>
+			<button type="button" class="bt-modal btn btn-primary">
+				모달창 띄우기 - JQuery
+			</button>
 			<!-- Modal -->
-			<div class="modal fade" id="modal1" tabindex="-1">
-				<div class="modal-dialog">
+			<div class="modal fade" id="modal1" tabindex="-1" <!--data-backdrop="static"-->>
+				<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title">Modal title</h5>
@@ -151,12 +154,13 @@
 								<span>&times;</span>
 							</button>
 						</div>
-						<div class="modal-body">
-							...
+						<div class="modal-body text-center">
+							<img src="//via.placeholder.com/600x400">
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 							<button type="button" class="btn btn-primary">Save changes</button>
+							<button type="button" class="bt-close btn btn-danger">Close - jQuery</button>
 						</div>
 					</div>
 				</div>
@@ -173,6 +177,56 @@
 			<input type="text" class="form-control" tabindex="2">
 			<input type="text" class="form-control" tabindex="4">
 		</div><!-- TabIndex -->
+
+		<!-- Nav -->
+		<div class="border rounded p-3 my-5">
+			<div class="alert alert-primary">
+				<h3>Nav</h3>
+			</div>
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Active</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				</li>
+			</ul>
+			<nav class="nav">
+				<a class="nav-link active" href="#">Active</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</nav>
+			<nav class="nav justify-content-center">
+				<a class="nav-link active" href="#">Active</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</nav>
+			<nav class="nav flex-column">
+				<a class="nav-link active" href="#">Active</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</nav>
+			<ul class="tab-wrap nav nav-tabs mt-5">
+				<li class="nav-link active">Active</li>
+				<li class="nav-link">Link</li>
+				<li class="nav-link">Link</li>
+				<li class="nav-link">Link</li>
+			</ul>
+			<div class="tab-cont display-1 p-5 border border-top-0">탭내용 1</div>
+			<div class="tab-cont display-1 p-5 border border-top-0 d-none">탭내용 2</div>
+			<div class="tab-cont display-1 p-5 border border-top-0 d-none">탭내용 3</div>
+			<div class="tab-cont display-1 p-5 border border-top-0 d-none">탭내용 4</div>
+
+		</div><!-- Nav -->
 
 	</div><!-- container -->
 	<script src="../js/04.bootstrap.js"></script>
