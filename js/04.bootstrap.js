@@ -17,3 +17,5 @@ $(".tab-wrap").find(".nav-link").click(function(){
 	$(".tab-cont").addClass('d-none');
 	$(".tab-cont").eq($(this).index()).removeClass('d-none');
 });
+
+$('.popover-bt').popover({ container: 'body', offset: 200 });
