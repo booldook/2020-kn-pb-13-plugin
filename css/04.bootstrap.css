@@ -2,3 +2,5 @@
 .modal-open .modal-dialog {margin-top: -3rem;}
 .navi-wrap .list-group-item {padding: 0.25rem 1.25rem;}
 .nav-link {cursor: pointer;}
+
+.photoshop > .progress-bar {transition: all 1.5s; width: 0%;}
